@@ -1,0 +1,189 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Google Advanced Search</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Google Search</a>
+        </nav>
+
+        <div>
+            <h3>Advanced Search</h3>
+            <form action="https://google.com/search" >
+                <fieldset>
+                    <legend>Find pages with...</legend>
+                    <div class=field>
+                        <label for="field1">all these words:</label>
+                        <input type="text" name="as_q" id="field1" class="text_input" />
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field2">this exact word or phrase:</label>
+                        <input type="text" name="as_epq" id="field2" class="text_input" />
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field3">any of these words:</label>
+                        <input type="text" name="as_oq" id="field3" class="text_input" />
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field4">none of these words:</label>
+                        <input type="text" name="as_eq" id="field4" class="text_input" />
+                    </div>
+                    <br/>
+                    <div class="field" >
+                        <label for="field5" >numbers ranging from:</label>
+                        <input type="text" name="as_nlo" id="field5" class="text_input_s" />
+                        <span><label for="field6">to</label></span>
+                        <input type="text" name="as_nhi" id="field6" class="text_input_s" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Then narrow your results by...</legend>
+                    <div class="field">
+                        <label for="field7">language:</label>
+                        <select id="field7" name="lr" class="select_field">
+                            <option value="">any language</option>
+                            <option value="lang_af">Afrikaans</option>
+                            <option value="lang_ar">Arabic</option>
+                            <option value="lang_hy">Armenian</option>
+                            <option value="lang_be">Belarusian</option>
+                            <option value="lang_bg">Bulgarian</option>
+                            <option value="lang_ca">Catalan</option>
+                            <option value="lang_zh-CN" >Chinese(simplified)</option>
+                            <option value="lang_zh-TW">Chinese(traditional</option>
+                            <option value="lang_hr">Croatian</option>
+                            <option value="lang_cs">Czech</option>
+                            <option value="lang_da">Danish</option>
+                            <option value="lang_nl">Dutch</option>
+                            <option value="lang_en">English</option>
+                            <option value="lang_eo">Esperanto</option>
+                            <option value="lang_et">Estonian</option>
+                            <option value="lang_tl">Filipino</option>
+                            <option value="lang_fi">Finnish</option>
+                            <option value="lang_fr">French</option>
+                            <option value="lang_de">German</option>
+                            <option value="lang_el">Greek</option>
+                            <option value="lang_iw">Hebrew</option>
+                            <option value="lang_hi">Hindi</option>
+                            <option value="lang_hu">Hungarian</option>
+                            <option value="lang_is">Icelandic</option>
+                            <option value="lang_id">Indonesian</option>
+                            <option value="lang_it">Italian</option>
+                            <option value="lang_ja">Japanese</option>
+                            <option value="lang_ko">Korean</option>
+                            <option value="lang_lv">Latvin</option>
+                            <option value="lang_lt">Lithuanian</option>
+                            <option value="lang_no">Norwegian</option>
+                            <option value="lang_fa">Persian</option>
+                            <option value="lang_pl">Polish</option>
+                            <option value="lang_pt">Portuguese</option>
+                            <option value="lang_ro">Romanian</option>
+                            <option value="lang_ru">Russian</option>
+                            <option value="lang_sr">Serbian</option>
+                            <option value="lang_sk">Slovak</option>
+                            <option value="lang_sl">Slovenian</option>
+                            <option value="lang_es">Spanish</option>
+                            <option value="lang_sw">Swahili</option>
+                            <option value="lang_sv">Swedish</option>
+                            <option value="lang_th">Thai</option>
+                            <option value="lang_tr">Turkish</option>
+                            <option value="lang_uk">Ukrainian</option>
+                            <option value="lang_vi">Vietnamese</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field8">region:</label>
+                        <select id="field8" name="cr" class="select_field" >
+                            <option value="" >any region</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field8">last update:</label>
+                        <select id="field8" name="as_qdr" class="select_field" >
+                            <option value="all" >anytime</option>
+                            <option value="d" >past 24 hours</option>
+                            <option value="w" >past week</option>
+                            <option value="m" >past month</option>
+                            <option value="y" >past year</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field4">site or domain:</label>
+                        <input type="text" name="as_sitesearch" id="field4" class="text_input" />
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field8">terms appearing:</label>
+                        <select id="field8" name="as_occt" class="select_field" >
+                            <option value="any" >anywhere in the page</option>
+                            <option value="title" >in the title of the page</option>
+                            <option value="body" >in the text of the page</option>
+                            <option value="url" >in the URL of the page</option>
+                            <option value="links" >in the links of the page</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field8"><a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637472732641850022-1118468026&rd=1">SafeSearch:</a></label>
+                        <select id="field8" name="safe" class="select_field" >
+                            <option value="images" >show explicit results</option>
+                            <option value="active" >hide explicit results</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field8">file type:</label>
+                        <select id="field8" name="as_filetype" class="select_field" >
+                            <option value="" >any format</option>
+                            <option value="pdf" >Adobe Acrobat PDF (.pdf)</option>
+                            <option value="ps" >Adobe postscript (.ps)</option>
+                            <option value="dwf" >Autodesk DWF (.dwf)</option>
+                            <option value="kml" >Google Earth KML (.kml)</option>
+                            <option value="kmz" >Google Earth KMZ (.kmz)</option>
+                            <option value="xls" >Microsoft Excel (.xls)</option>
+                            <option value="ppt" >Microsoft PowerPoint (.ppt)</option>
+                            <option value="doc" >Microsoft Word (.doc)</option>
+                            <option value="rtf" >Rich Text Format (.rtf)</option>
+                            <option value="swf" >Shockwave Flash (.swf)</option>
+                        </select>
+                    </div>
+                    <br/>
+                    <div class="field">
+                        <label for="field8"><a href="" >usage rights:</a></label>
+                        <select id="field8" name="tbs" class="select_field" >
+                            <option value="" ></option>
+                            <option value="sur%3Af" >free to use or share</option>
+                            <option value="sur%3Afc" >free to use or share, even commercially</option>
+                            <option value="sur%3Afm" >free to use share or modify</option>
+                            <option value="sur%3Afmc" >free to use, share or modify, even commercially</option>
+                        </select>
+                    </div>
+                    <br/>
+                </fieldset>
+                <input type="submit" value="advanced search">
+            </form>
+        </div>
+
+        <footer>
+            <ul class="leftLinks">
+                <li><a>Advertising</a></li>
+                <li><a>Business</a></li>
+                <li><a>About</a></li>
+                <li><a>How Search works</a></li>
+            </ul>
+            <ul class="rightLinks">
+                <li><a>Privacy</a></li>
+                <li><a>Terms</a></li>
+                <li><a>Settings</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
