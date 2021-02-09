@@ -1,0 +1,162 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+    font-size: 10pt;
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+//Navigation CSS
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100vh;
+}
+
+
+.container-item {
+    flex: 1 100%;
+}
+
+.toplinks {
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 13px;
+    white-space: nowrap;
+
+    a {
+        color: rgba(0,0,0,0.87);
+        margin-right: 20px;
+        text-decoration: none;
+    }
+}
+
+//Middle Content CSS
+.middle-content {
+    height: 82vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .middle-item{
+        width: 90%;
+        margin: 2vh 0;
+
+    img {
+        max-width: 100%;
+        height: auto;
+      }
+
+
+    input[type=text] {
+
+        max-width: 450px;
+        width: 90%;
+        height: 7vh;
+        background-color: transparent;
+        margin-bottom: 3vh;
+        padding:0 30px;
+        border: 1px solid #dfdfdf;
+        border-radius: 23px;
+        outline: none;
+        font-size: 16px;
+        color: rgba(0,0,0,.87);
+        line-height: 34px;
+    }
+
+    input[type=text]:hover {
+        box-shadow: 1px 1px 5px rgb(196, 198, 199);
+    }
+}
+
+
+}
+
+.btn-div {
+    width: 100%;
+
+    input {
+
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    input:hover {
+        box-shadow: 1px 1px 3px rgb(157, 160, 162);
+    }
+}
+
+//Footer CSS
+footer {
+    background-color: #eeee;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 40px;
+    border-top: 1px solid #d5d1d1;
+
+    ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #70757a;
+    }
+
+    .leftLinks {
+        display: flex;
+        margin: 0;
+    }
+
+    .rightLinks {
+        display: flex;
+        margin: 0;
+    }
+
+    @media only screen and (min-width: 620px) {
+        flex-flow: row nowrap;
+
+        .leftLinks {
+            padding-left: 18.7px;
+            flex: 1;
+        }
+
+        .rightLinks {
+            padding-right: 18.7px;
+        }
+    }
+
+}

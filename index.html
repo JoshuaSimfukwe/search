@@ -4,36 +4,46 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
+        <link rel="stylesheet" href="main.css">
     </head>
-    <body>
-        <nav>
-            <a href="image_search.html">Image Search</a>
-            <a href="advanced_search.html">Advanced Search</a>
-        </nav>
+    <body>  
 
-        <center>
-            <div class="img">
-                <img src="images/Google Home Logo.svg" alt="logo">
+        <div class="container">
+             <!--navigation-->
+             <nav class="container-item toplinks">
+                <a href="image_search.html">Google search</a>
+                <a href="advanced_search.html">Google advanced search</a>
+            </nav>
+    
+            <!--middle content-->
+            <div class="middle-content container-item">
+                <div class="middle-item">
+                    <img src="images/Google Home Logo.svg" alt="logo">
+                </div>
+                <form action="http://images.google.com/search" class="middle-item">
+                    <input type="text" name="q" maxlength="2048" autofocus />
+                    <div class="btn-div">
+                        <input type="submit" value="Google Search" class="form-btn">
+                        <input type="button" onclick="location.href='https://www.google.com/doodles'" value="I'm Feeling Lucky" class="form-btn">
+                    </div>
+                </form>
             </div>
-            <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-                <input type="button" onclick="location.href='https://www.google.com/doodles'" value="I'm Feeling Lucky">
-            </form>
-        </center>
-
-        <footer>
-            <ul class="leftLinks">
-                <li><a>Advertising</a></li>
-                <li><a>Business</a></li>
-                <li><a>About</a></li>
-                <li><a>How Search works</a></li>
-            </ul>
-            <ul class="rightLinks">
-                <li><a>Privacy</a></li>
-                <li><a>Terms</a></li>
-                <li><a>Settings</a></li>
-            </ul>
-        </footer>
+    
+            <!--footer-->
+            <footer class="container-item">
+                <ul class="leftLinks">
+                    <li><a href="https://policies.google.com/privacy">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms">Terms</a></li>
+                    <li><a href="https://www.google.com/preferences">Settings</a></li>
+                </ul>
+                <ul class="rightLinks">
+                    <li><a href="https://ads.google.com/">Advertising</a></li>
+                    <li><a href="https://www.google.com/services">Business</a></li>
+                    <li><a href="https://about.google/">About</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks">How Search works</a></li>
+                </ul>
+            </footer>                       
+        </div>
+                     
     </body>
 </html>
