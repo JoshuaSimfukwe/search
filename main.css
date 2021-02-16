@@ -6,6 +6,10 @@ html, body {
   font-size: 10pt;
 }
 
+html a, body a {
+  text-decoration: none;
+}
+
 html a:hover, body a:hover {
   text-decoration: underline;
 }
@@ -163,6 +167,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: #70757a;
+  white-space: nowrap;
 }
 
 footer .leftLinks {

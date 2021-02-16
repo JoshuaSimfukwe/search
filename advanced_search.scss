@@ -1,0 +1,191 @@
+
+$myBlue1: #4d90fe;
+$myBlue2: #4787ed;
+
+
+
+//navigation
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e5e5e5;
+    padding: 0 15px;
+
+    .logo {
+
+        display: flex;
+        align-items: center;    
+        max-width: 152px;
+        min-width: 152px;
+        height: 60px;
+        text-align: center;
+    }
+
+     img {
+        width: 92px;
+        height: 33px;
+     }
+}
+
+//header
+#header {
+    color: #d93025;
+    font-size: 20px;
+    padding: 25px 35px;
+
+    label {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.divider {
+    margin: 0 0 20px 0;
+    padding: 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+//form
+form {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 80%;
+    margin: 0px 2% 0 45px;
+
+    fieldset {
+        border: none;
+        padding-bottom: 30px;
+    }
+    
+    legend, h3 {
+        width: 169px;
+        height: 30px;
+        font-size: 16px;
+        min-height: 42px;
+        font-weight: 500;
+        color: #333;
+        margin-bottom: -25px;
+    }
+
+    .field {
+        display: flex;
+        flex-flow: column;   
+    }
+
+    label {
+        margin: 20px 0;
+        color: #222;
+    } 
+
+    input, select {
+        max-width: 169px;
+        height: 29px;
+        border: 1px solid #dcdcdc;
+    }
+
+    input:focus {
+        border: 1px solid $myBlue2;
+        outline: none;
+      }
+
+    select {
+        background-color: #f5f5f5;
+        color: #444;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 27px;
+    }
+
+    .double-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 169px;
+
+    }
+    
+    .text_input_s {
+        max-width: 70px;
+    }
+    
+    //Submit Button CSS
+    input[type=submit] {
+        min-width: 110px;
+        background-color: $myBlue1;
+        border: none;
+        color: #fff;
+        border-radius: 2px;
+        font-size: 11px;
+        margin: 30px 0;
+
+    }
+
+    input[type=submit]:hover {
+        border: 2px solid $myBlue2;
+        background-image: linear-gradient(top,$myBlue1,$myBlue2);
+    }
+
+
+    .submit-btn {
+        justify-content: center;
+    }
+
+}
+
+.adv-links {
+    padding-bottom: 15px;
+    ul {
+        list-style-type: none;
+        margin-left: -40px;
+        line-height: 18px;
+    }
+
+}
+
+/****************************************
+Media Queries
+****************************************/
+
+@media screen and (min-width: 364px) {
+    form {
+
+        legend {
+            margin-bottom: 0px;
+        }
+
+        .field {
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+
+        label, #btn-space {
+            min-width: 180px;
+            margin: 15px 0;
+        }
+
+        input, .select_field, .double-input{
+            max-width: none;
+            flex: 0.5 1 60%;
+        }
+
+        .double-input {
+            justify-content: space-between;
+    
+        }
+        
+        .text_input_s {
+            min-width: 45%;
+        }
+
+        input[type=submit] {
+            flex: 0;
+            margin:10px 0 0;
+        }
+
+        .submit-btn {
+            justify-content: flex-end;
+        }
+    
+    }
+}
